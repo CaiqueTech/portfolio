@@ -1,6 +1,11 @@
 import { Fragment } from "react";
+import { Navbar } from "./components/Navbar";
 import "./App.css";
 
 export const App: React.FC = () => {
-  return <Fragment>Ready to code</Fragment>;
+  return (
+    <Fragment>
+      <Navbar />
+    </Fragment>
+  );
 };

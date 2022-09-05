@@ -7,7 +7,23 @@
 }
 
 body {
-  background: #0a1930;
+  line-height: 1.6;
   color: #c1d0e7;
+  background: #0a1930;
   font-family: "Anek Telugu", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
