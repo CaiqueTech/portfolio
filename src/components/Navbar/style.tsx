@@ -74,6 +74,21 @@ export const MenuS = styled.ul`
 export const MenuLink = styled.li`
   color: #ccd8f0;
   cursor: pointer;
+
+  ::after {
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 1px;
+    bottom: -5px;
+    display: block;
+    background-color: #ccd8f0;
+    transition: all 0.5s;
+  }
+
+  :hover::after {
+    width: 100%;
+  }
 `;
 
 export const Resume = styled.button`
@@ -81,4 +96,8 @@ export const Resume = styled.button`
   padding: 1em;
   border: 1px solid #ccd8f0;
   border-radius: 0.25em;
+
+  :hover {
+    background-color: #112240;
+  }
 `;
