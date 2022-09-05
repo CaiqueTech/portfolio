@@ -16,7 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  html{
+    overflow-x: hidden;
+  }
   body {
+    position: relative;
     width: 100vw;
     overflow-x: hidden;
     font-size: 1rem;
