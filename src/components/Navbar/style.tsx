@@ -51,6 +51,7 @@ export const NavbarS = styled.nav<NavbarProps>`
     flex-direction: column;
     transform: translateX(100%);
     transition: ease-in-out 1s;
+    z-index: 1;
 
     ${(props) =>
       props.menuOpen
