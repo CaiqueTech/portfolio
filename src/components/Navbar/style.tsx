@@ -11,33 +11,29 @@ interface NavbarProps {
 }
 
 export const HeaderS = styled.header`
-  position: absolute;
-  width: 100%;
+  /* Basic Styles */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 4rem;
-  height: 6rem;
+  /* Static */
+  position: fixed;
+  width: 100%;
   position: absolute;
-  width: 100vw;
+  height: 6rem;
   top: 0;
   z-index: 1;
-
-  @media screen and (max-width: 968px) {
-    opacity: 0;
-    animation: ${revealLink} 0.7s forwards 3s;
-  }
+  /* Animation */
+  animation: ${revealLink} 0.7s forwards 3s;
+  opacity: 0;
 `;
 
 export const Logo = styled.h1`
   display: flex;
   color: #5ff8de;
   font-size: ${cssVariables.fontSizeLarger};
-
-  @media screen and (min-width: 968px) {
-    animation: ${revealLink} 0.7s forwards 3.2s;
-    opacity: 0;
-  }
+  animation: ${revealLink} 0.7s forwards 3.2s;
+  opacity: 0;
 
   span {
     transition: 0.3s;
@@ -108,6 +104,8 @@ export const MenuLink = styled.li`
   cursor: pointer;
   padding: 1em;
   font-size: ${cssVariables.fontSizeSmall};
+  opacity: 0;
+  animation: ${revealLink} 0.7s forwards;
 
   ::after {
     content: "";
@@ -124,28 +122,21 @@ export const MenuLink = styled.li`
     width: 100%;
   }
 
-  @media screen and (min-width: 968px) {
-    opacity: 0;
-    animation: ${revealLink} 0.7s forwards;
-
-    &:nth-child(1) {
-      animation-delay: 3.3s;
-    }
-    &:nth-child(2) {
-      animation-delay: 3.4s;
-    }
-    &:nth-child(3) {
-      animation-delay: 3.5s;
-    }
-    &:nth-child(4) {
-      animation-delay: 3.6s;
-    }
+  &:nth-child(1) {
+    animation-delay: 3.3s;
+  }
+  &:nth-child(2) {
+    animation-delay: 3.4s;
+  }
+  &:nth-child(3) {
+    animation-delay: 3.5s;
+  }
+  &:nth-child(4) {
+    animation-delay: 3.6s;
   }
 `;
 
 export const ResumeS = styled(ButtonS)`
-  @media screen and (min-width: 968px) {
-    opacity: 0;
-    animation: ${revealLink} 0.7s forwards 3.7s;
-  }
+  opacity: 0;
+  animation: ${revealLink} 0.7s forwards 3.7s;
 `;
