@@ -1,8 +1,10 @@
+// Imports
 import styled, { css } from "styled-components";
-
 import { cssVariables } from "../../GlobalStyle";
-import { revealLink } from "../Animations/style";
 import { ButtonS } from "../Styles/ButtonS";
+
+// Animation
+import { revealLink } from "../Animations/style";
 
 interface NavbarProps {
   menuOpen: boolean;
@@ -19,15 +21,29 @@ export const HeaderS = styled.header`
   position: absolute;
   width: 100vw;
   top: 0;
+
+  @media screen and (max-width: 968px) {
+    opacity: 0;
+    animation: ${revealLink} 0.7s forwards 3s;
+  }
 `;
 
 export const Logo = styled.h1`
+  display: flex;
   color: #5ff8de;
   font-size: ${cssVariables.fontSizeLarger};
 
   @media screen and (min-width: 968px) {
+    animation: ${revealLink} 0.7s forwards 3.2s;
     opacity: 0;
-    animation: ${revealLink} 0.7s forwards;
+  }
+
+  span {
+    transition: 0.3s;
+  }
+
+  span:hover {
+    transform: scaleY(2);
   }
 `;
 
@@ -59,7 +75,7 @@ export const NavbarS = styled.nav<NavbarProps>`
     background-color: #112240;
     flex-direction: column;
     transform: translateX(100%);
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.3s;
     z-index: 1;
 
     ${(props) =>
@@ -113,16 +129,16 @@ export const MenuLink = styled.li`
     animation: ${revealLink} 0.7s forwards;
 
     &:nth-child(1) {
-      animation-delay: 0.3s;
+      animation-delay: 3.3s;
     }
     &:nth-child(2) {
-      animation-delay: 0.4s;
+      animation-delay: 3.4s;
     }
     &:nth-child(3) {
-      animation-delay: 0.5s;
+      animation-delay: 3.5s;
     }
     &:nth-child(4) {
-      animation-delay: 0.6s;
+      animation-delay: 3.6s;
     }
   }
 `;
@@ -130,6 +146,6 @@ export const MenuLink = styled.li`
 export const ResumeS = styled(ButtonS)`
   @media screen and (min-width: 968px) {
     opacity: 0;
-    animation: ${revealLink} 0.7s forwards 0.7s;
+    animation: ${revealLink} 0.7s forwards 3.7s;
   }
 `;

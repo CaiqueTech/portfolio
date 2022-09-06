@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
 
 export const cssVariables = {
   fontSizeLargest: "3.815rem",
@@ -9,8 +9,19 @@ export const cssVariables = {
   fontSizeSmaller: "0.64rem",
 };
 
-export const GlobalStyle = createGlobalStyle`
+export const bodyAnimation = keyframes`
+  0%{
+    content: "";
+  }
+  100% {
+    content: "";
+    opacity: 0;
+    display: none;
+    transform: translateY(-100%);
+  }
+`;
 
+export const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
@@ -27,6 +38,21 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background: #0a1930;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  body::after {
+    content: "CM";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: ${cssVariables.fontSizeLarger};
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background-color: #020C1B;
+    animation: ${bodyAnimation} .5s forwards 2.7s;
   }
   img {
     width: 100%;

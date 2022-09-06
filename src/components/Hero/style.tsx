@@ -21,26 +21,44 @@ export const HeroS = styled.section`
     padding-inline: 4em;
   }
 
-  @media screen and (min-width: 968px) {
-    & > * {
-      opacity: 0;
-      animation: ${revealText} 1s forwards;
-    }
+  & > * {
+    opacity: 0;
+    animation: ${revealText} 1s forwards;
+  }
 
+  @media screen and (max-width: 968px) {
     & > *:nth-child(1) {
-      animation-delay: 1.3s;
+      animation-delay: 3.5s;
     }
     & > *:nth-child(2) {
-      animation-delay: 1.4s;
+      animation-delay: 3.6s;
     }
     & > *:nth-child(3) {
-      animation-delay: 1.5s;
+      animation-delay: 3.7s;
     }
     & > *:nth-child(4) {
-      animation-delay: 1.6s;
+      animation-delay: 3.8s;
     }
     & > *:nth-child(5) {
-      animation-delay: 1.7s;
+      animation-delay: 3.9s;
+    }
+  }
+
+  @media screen and (min-width: 968px) {
+    & > *:nth-child(1) {
+      animation-delay: 4.3s;
+    }
+    & > *:nth-child(2) {
+      animation-delay: 4.4s;
+    }
+    & > *:nth-child(3) {
+      animation-delay: 4.5s;
+    }
+    & > *:nth-child(4) {
+      animation-delay: 4.6s;
+    }
+    & > *:nth-child(5) {
+      animation-delay: 4.7s;
     }
   }
 `;
