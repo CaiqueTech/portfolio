@@ -1,12 +1,16 @@
 import styled, { css } from "styled-components";
 
 import { cssVariables } from "../../GlobalStyle";
+import { revealLink } from "../Animations/style";
+import { ButtonS } from "../Styles/ButtonS";
 
 interface NavbarProps {
   menuOpen: boolean;
 }
 
 export const HeaderS = styled.header`
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +24,11 @@ export const HeaderS = styled.header`
 export const Logo = styled.h1`
   color: #5ff8de;
   font-size: ${cssVariables.fontSizeLarger};
+
+  @media screen and (min-width: 968px) {
+    opacity: 0;
+    animation: ${revealLink} 0.7s forwards;
+  }
 `;
 
 export const MenuOpener = styled.button`
@@ -41,7 +50,7 @@ export const NavbarS = styled.nav<NavbarProps>`
   gap: 2em;
 
   @media screen and (max-width: 768px) {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: min(100%, 70vw);
     right: 0;
@@ -97,5 +106,30 @@ export const MenuLink = styled.li`
 
   :hover::after {
     width: 100%;
+  }
+
+  @media screen and (min-width: 968px) {
+    opacity: 0;
+    animation: ${revealLink} 0.7s forwards;
+
+    &:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+  }
+`;
+
+export const ResumeS = styled(ButtonS)`
+  @media screen and (min-width: 968px) {
+    opacity: 0;
+    animation: ${revealLink} 0.7s forwards 0.7s;
   }
 `;

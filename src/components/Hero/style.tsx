@@ -4,10 +4,13 @@ import styled from "styled-components";
 // CSS Variables
 import { cssVariables } from "../../GlobalStyle";
 
+import { ButtonS } from "../Styles/ButtonS";
+import { revealText } from "../Animations/style";
+
 export const HeroS = styled.section`
   width: min(50rem, 100%);
   margin-inline: auto;
-  height: calc(100vh);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,6 +19,29 @@ export const HeroS = styled.section`
 
   @media screen and (max-width: 968px) {
     padding-inline: 4em;
+  }
+
+  @media screen and (min-width: 968px) {
+    & > * {
+      opacity: 0;
+      animation: ${revealText} 1s forwards;
+    }
+
+    & > *:nth-child(1) {
+      animation-delay: 1.3s;
+    }
+    & > *:nth-child(2) {
+      animation-delay: 1.4s;
+    }
+    & > *:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+    & > *:nth-child(4) {
+      animation-delay: 1.6s;
+    }
+    & > *:nth-child(5) {
+      animation-delay: 1.7s;
+    }
   }
 `;
 
@@ -56,6 +82,6 @@ export const Description = styled.p`
   }
 `;
 
-export const HeroButton = styled.button`
+export const HeroButton = styled(ButtonS)`
   color: #64ffda;
 `;

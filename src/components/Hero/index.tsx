@@ -1,4 +1,3 @@
-import { ButtonS } from "../Styles/ButtonS";
 import { Description, HeroButton, HeroS, Hi, Name, Profission } from "./style";
 
 export const Hero = () => {
@@ -8,13 +7,13 @@ export const Hero = () => {
       <Name>Caique Morales.</Name>
       <Profission>Desenvolvedor WEB.</Profission>
       <Description>
-        Eu sou um desenvolvedor WEB especializado no Front-End (também com
+        Sou um desenvolvedor WEB especializado no Front-End (também com
         conhecimentos no Back-End). Atualmente estou focado nas tecnologias
         React e Typescript.
       </Description>
-      <ButtonS>
+      <HeroButton>
         <span>Ver projetos</span>
-      </ButtonS>
+      </HeroButton>
     </HeroS>
   );
 };

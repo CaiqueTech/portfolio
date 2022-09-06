@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { ButtonS } from "../Styles/ButtonS";
-import { HeaderS, Logo, MenuLink, MenuOpener, MenuS, NavbarS } from "./style";
+import {
+  HeaderS,
+  Logo,
+  MenuLink,
+  MenuOpener,
+  MenuS,
+  NavbarS,
+  ResumeS,
+} from "./style";
 
 interface NavbarProps {
   menuOpen?: boolean;
@@ -22,9 +29,9 @@ export const Navbar = (props: NavbarProps) => {
           <MenuLink>Projetos</MenuLink>
           <MenuLink>Contato</MenuLink>
         </MenuS>
-        <ButtonS>
+        <ResumeS>
           <span>Currículo</span>
-        </ButtonS>
+        </ResumeS>
         <MenuOpener>
           <span className="material-symbols-outlined">menu</span>
         </MenuOpener>
