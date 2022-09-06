@@ -21,6 +21,7 @@ export const HeaderS = styled.header`
   position: absolute;
   width: 100vw;
   top: 0;
+  z-index: 1;
 
   @media screen and (max-width: 968px) {
     opacity: 0;
@@ -66,17 +67,16 @@ export const NavbarS = styled.nav<NavbarProps>`
   gap: 2em;
 
   @media screen and (max-width: 768px) {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: min(100%, 70vw);
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #112240;
     flex-direction: column;
+    background-color: #112240;
     transform: translateX(100%);
-    transition: ease-in-out 0.3s;
-    z-index: 1;
+    transition: transform 0.3s ease-in-out;
 
     ${(props) =>
       props.menuOpen

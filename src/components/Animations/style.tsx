@@ -21,10 +21,6 @@ export const revealLink = keyframes`
     transform: translateY(-100%);
   }
 
-  50% {
-    opacity: .5;
-  }
-
   100% {
     opacity: 1;
   }
