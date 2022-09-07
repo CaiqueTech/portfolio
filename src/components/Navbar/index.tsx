@@ -8,6 +8,7 @@ import {
   NavbarS,
   ResumeS,
 } from "./style";
+import { MenuIcon } from "./style";
 
 interface NavbarProps {
   menuOpen?: boolean;
@@ -33,11 +34,11 @@ export const Navbar = (props: NavbarProps) => {
           <span>Currículo</span>
         </ResumeS>
         <MenuOpener>
-          <span className="material-symbols-outlined">menu</span>
+          <MenuIcon />
         </MenuOpener>
       </NavbarS>
       <MenuOpener onClick={() => setMenuOpen(!menuOpen)}>
-        <span className="material-symbols-outlined">menu</span>
+        <MenuIcon />
       </MenuOpener>
     </HeaderS>
   );

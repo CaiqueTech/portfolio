@@ -1,4 +1,5 @@
 import { createGlobalStyle, keyframes } from "styled-components";
+import { MenuOpener } from "./components/Navbar/style";
 
 export const cssVariables = {
   fontSizeLargest: "3.815rem",
@@ -74,4 +75,5 @@ export const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
+  
 `;

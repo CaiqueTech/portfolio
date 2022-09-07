@@ -8,7 +8,7 @@ import { ButtonS } from "../Styles/ButtonS";
 import { revealText } from "../Animations/style";
 
 export const HeroS = styled.section`
-  width: min(50rem, 100%);
+  width: min(55rem, 100%);
   margin-inline: auto;
   height: 100vh;
   display: flex;

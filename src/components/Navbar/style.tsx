@@ -2,6 +2,7 @@
 import styled, { css } from "styled-components";
 import { cssVariables } from "../../GlobalStyle";
 import { ButtonS } from "../Styles/ButtonS";
+import { HiMenu } from "react-icons/hi";
 
 // Animation
 import { revealLink } from "../Animations/style";
@@ -47,9 +48,13 @@ export const Logo = styled.h1`
 export const MenuOpener = styled.button`
   color: #ccd8f0;
 
-  & > span {
-    font-size: 1.5rem;
-  }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -139,4 +144,8 @@ export const MenuLink = styled.li`
 export const ResumeS = styled(ButtonS)`
   opacity: 0;
   animation: ${revealLink} 0.7s forwards 3.7s;
+`;
+
+export const MenuIcon = styled(HiMenu)`
+  font-size: 1.7rem;
 `;
