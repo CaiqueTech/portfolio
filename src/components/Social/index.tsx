@@ -5,9 +5,15 @@ export const Social = () => {
   return (
     <SocialS>
       <div>
-        <FiLinkedin />
-        <FiGithub />
-        <FiInstagram />
+        <a href="https://www.linkedin.com/in/caique-morales/">
+          <FiLinkedin />
+        </a>
+        <a href="https://github.com/CaiqueTech">
+          <FiGithub />
+        </a>
+        <a href="https://www.instagram.com/caique_brad/">
+          <FiInstagram />
+        </a>
       </div>
       <div>
         <span

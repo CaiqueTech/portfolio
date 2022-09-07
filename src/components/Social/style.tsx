@@ -14,11 +14,12 @@ export const SocialS = styled.div`
     animation: ${revealText} 1s forwards 5s;
   }
   & > *:first-of-type {
-    gap: 1em;
+    gap: 0.5em;
     bottom: 0;
     left: 4rem;
 
     & > * {
+      color: #c1c1c1;
       position: relative;
       cursor: pointer;
       transition: all 2.2;
