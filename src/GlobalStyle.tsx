@@ -1,4 +1,5 @@
 import { createGlobalStyle, keyframes } from "styled-components";
+import { maxHeight } from "./components/Animations/style";
 import { MenuOpener } from "./components/Navbar/style";
 
 export const cssVariables = {
@@ -39,10 +40,13 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background: #0a1930;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+    animation: ${maxHeight} 10s forwards ;
   }
   body::after {
     content: "CM";
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -26,6 +26,12 @@ export const revealLink = keyframes`
   }
 `;
 
+export const maxHeight = keyframes`
+  100%{
+    max-height: max-content;
+  }
+`;
+
 export const AnimationArea = styled.div`
   padding: 4em;
   background: #0a1930;
