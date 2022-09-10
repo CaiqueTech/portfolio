@@ -32,6 +32,12 @@ export const maxHeight = keyframes`
   }
 `;
 
+export const flip = keyframes`
+  100%{
+    transform: rotateY(360deg);
+  }
+`;
+
 export const AnimationArea = styled.div`
   padding: 4em;
   background: #0a1930;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { flip } from "../Animations/style";
 
 export const TechS = styled.section`
   height: 40vh;
@@ -17,5 +18,9 @@ export const TechS = styled.section`
     height: 10rem;
     color: blue;
     background-color: #fff;
+
+    :hover {
+      animation: ${flip} 1s linear forwards;
+    }
   }
 `;
