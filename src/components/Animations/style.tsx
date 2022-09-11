@@ -34,7 +34,7 @@ export const maxHeight = keyframes`
 
 export const flip = keyframes`
   100%{
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
   }
 `;
 

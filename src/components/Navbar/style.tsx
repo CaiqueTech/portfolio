@@ -68,9 +68,9 @@ export const NavbarS = styled.nav<NavbarProps>`
   gap: 2em;
 
   @media screen and (max-width: 768px) {
-    position: absolute;
-    height: 100vh;
+    position: fixed !important;
     width: min(100%, 70vw);
+    height: 100vh;
     right: 0;
     top: 0;
     bottom: 0;

@@ -40,9 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background: #0a1930;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-height: 100vh;
-    overflow: hidden;
-    animation: ${maxHeight} 10s forwards ;
+    
   }
   body::after {
     content: "CM";
