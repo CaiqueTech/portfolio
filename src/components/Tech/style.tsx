@@ -24,3 +24,5 @@ export const TechS = styled.section`
     }
   }
 `;
+
+export const TechItem = styled.div``;
