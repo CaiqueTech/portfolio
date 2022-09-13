@@ -75,7 +75,7 @@ export const NavbarS = styled.nav<NavbarProps>`
     height: 100vh;
     inset: 0 0 0 auto;
     flex-direction: column;
-    background-color: #112240;
+    background-color: ${cssVariables.colorPrimary600};
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 

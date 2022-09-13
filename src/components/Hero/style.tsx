@@ -73,7 +73,7 @@ export const Hi = styled.p`
 `;
 
 export const Name = styled.h1`
-  color: #ccd6f6;
+  color: ${cssVariables.colorPrimary50};
   font-size: ${cssVariables.fontSizeLargest};
 
   @media screen and (max-width: 968px) {
@@ -82,7 +82,7 @@ export const Name = styled.h1`
 `;
 
 export const Profission = styled.h1`
-  color: #8892b0;
+  color: ${cssVariables.colorPrimary400};
   font-size: ${cssVariables.fontSizeLargest};
 
   @media screen and (max-width: 968px) {
@@ -92,7 +92,7 @@ export const Profission = styled.h1`
 
 export const Description = styled.p`
   font-size: ${cssVariables.fontSizeLarge};
-  color: #8892b0;
+  color: ${cssVariables.colorPrimary100};
   max-width: 30rem;
 
   @media screen and (max-width: 968px) {
