@@ -18,21 +18,20 @@ export const HeaderS = styled.header`
   align-items: center;
   padding-inline: 4rem;
   /* Static */
-  position: fixed;
   width: 100%;
   position: absolute;
   height: 6rem;
   top: 0;
   z-index: 1;
   /* Animation */
-  animation: ${revealLink} 0.7s forwards 3s;
-  opacity: 0;
 `;
 
 export const Logo = styled.h1`
+  /* Basic Styles */
   display: flex;
   color: #5ff8de;
   font-size: ${cssVariables.fontSizeLarger};
+  /* Animation */
   animation: ${revealLink} 0.7s forwards 3.2s;
   opacity: 0;
 
@@ -47,6 +46,9 @@ export const Logo = styled.h1`
 
 export const MenuOpener = styled.button`
   color: #ccd8f0;
+  animation: ${revealLink} 0.7s forwards 3s;
+  opacity: 0;
+  z-index: -1;
 
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -68,12 +70,10 @@ export const NavbarS = styled.nav<NavbarProps>`
   gap: 2em;
 
   @media screen and (max-width: 768px) {
-    position: fixed !important;
+    position: fixed;
     width: min(100%, 70vw);
     height: 100vh;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0 0 0 auto;
     flex-direction: column;
     background-color: #112240;
     transform: translateX(100%);
