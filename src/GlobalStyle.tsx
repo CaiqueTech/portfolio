@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background: #0a1930;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    height: 100vh;
   }
   body::after {
     content: "CM";

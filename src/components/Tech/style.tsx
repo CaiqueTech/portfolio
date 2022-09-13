@@ -24,7 +24,6 @@ export const TechS = styled.section`
     width: 10rem;
     height: 10rem;
     color: #235cb1;
-
     cursor: pointer;
     /* Glassmorphism */
     background: rgba(10, 25, 48, 0.25);
@@ -33,11 +32,6 @@ export const TechS = styled.section`
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-
-    :hover {
-      transition: 1s linear;
-      transform: rotateY(360deg);
-    }
   }
 `;
 
