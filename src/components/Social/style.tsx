@@ -22,13 +22,13 @@ export const SocialS = styled.div`
       color: #c1c1c1;
       position: relative;
       cursor: pointer;
-      transition: all 2.2;
+      transition: all 0.3s;
       font-size: ${cssVariables.fontSizeLarge};
     }
 
-    & > *:hover {
-      top: -5px;
-    }
+    /* & > *:hover {
+      transform: translateY(-5px);
+    } */
   }
 
   & > *:last-of-type {
@@ -41,11 +41,13 @@ export const SocialS = styled.div`
       writing-mode: vertical-lr;
       cursor: pointer;
       position: relative;
+      transition: all 0.3s;
     }
 
-    span:hover {
-      top: -5px;
-    }
+    /* span:hover {
+      font-weight: bold;
+      transform: translateY(-5px);
+    } */
   }
 
   & > *::after {

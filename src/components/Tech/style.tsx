@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TechS = styled.section`
   min-height: 40vh;
-  width: min(55rem, 100%);
+  width: min(60rem, 100%);
   margin: 4em auto;
   display: grid;
   justify-items: center;

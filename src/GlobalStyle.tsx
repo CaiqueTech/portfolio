@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     line-height: 1.6;
     background: ${cssVariables.colorPrimary700};
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lato', sans-serif;
     height: 100vh;
   }
   body::after {
