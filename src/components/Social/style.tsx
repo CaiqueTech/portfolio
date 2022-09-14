@@ -26,9 +26,9 @@ export const SocialS = styled.div`
       font-size: ${cssVariables.fontSizeLarge};
     }
 
-    /* & > *:hover {
+    & > *:hover {
       transform: translateY(-5px);
-    } */
+    }
   }
 
   & > *:last-of-type {
@@ -44,10 +44,10 @@ export const SocialS = styled.div`
       transition: all 0.3s;
     }
 
-    /* span:hover {
+    span:hover {
       font-weight: bold;
       transform: translateY(-5px);
-    } */
+    }
   }
 
   & > *::after {
