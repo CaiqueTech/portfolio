@@ -1,12 +1,12 @@
-import { TechContent, TechImage, TechS, TechText } from "./style";
+import { AboutContent, AboutImage, AboutS, AboutText } from "./style";
 import { SectionTitle } from "../Styles/SectionTitle";
 
-export const Tech = () => {
+export const About = () => {
   return (
-    <TechS>
+    <AboutS>
       <SectionTitle>Sobre</SectionTitle>
-      <TechContent>
-        <TechText>
+      <AboutContent>
+        <AboutText>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magnam
             porro minima. Id labore vel molestiae eum expedita voluptatibus
@@ -25,9 +25,9 @@ export const Tech = () => {
             ipsum deserunt commodi similique illo pariatur perferendis at quos
             consequatur voluptatem! autem!
           </p>
-        </TechText>
-        <TechImage>imagem</TechImage>
-      </TechContent>
-    </TechS>
+        </AboutText>
+        <AboutImage>imagem</AboutImage>
+      </AboutContent>
+    </AboutS>
   );
 };

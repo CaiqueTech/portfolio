@@ -71,7 +71,9 @@ export const GlobalStyle = createGlobalStyle`
     animation: ${bodyAnimation} .5s forwards 2.7s;
   }
   section{
-    margin-block: 6rem;
+    width: min(60rem, 100%);
+    margin-inline: auto;
+    margin-block: 15rem;
   }
   img {
     width: 100%;
