@@ -2,7 +2,7 @@ import { MainS } from "./components/Styles/MainS";
 import { GlobalStyle } from "./GlobalStyle";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { Tech } from "./components/Tech";
+import { About } from "./components/About";
 import { Social } from "./components/Social";
 import { Projects } from "./components/Projects";
 
@@ -12,7 +12,7 @@ export const App: React.FC = () => {
       <GlobalStyle />
       <Navbar />
       <Hero />
-      <Tech />
+      <About />
       <Projects />
       <Social />
     </MainS>
