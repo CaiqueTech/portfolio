@@ -8,7 +8,7 @@ export const cssVariables = {
   colorPrimary800: "#092B34",
   colorPrimary700: "#0C3945",
   colorPrimary600: "#0F4657",
-  colorPrimary500: "#125469",
+  colorPrimary500: "#1e88a9",
   colorPrimary400: "#23A9D1",
   colorPrimary300: "#3FB9DE",
   colorPrimary200: "#62C6E4",
@@ -74,6 +74,12 @@ export const GlobalStyle = createGlobalStyle`
     width: min(60rem, 100%);
     margin-inline: auto;
     margin-block: 15rem;
+    @media screen and (max-width: 1200px) {
+    padding-inline: 5em;
+    }
+    @media screen and (max-width: 968px) {
+    padding-inline: 4em;
+    }
   }
   img {
     width: 100%;

@@ -12,7 +12,7 @@ export const SectionTitle = styled.h1`
     display: block;
     right: -100px;
     bottom: 15px;
-    width: 200px;
+    width: min(200px, 30vw);
     height: 2px;
     background-color: ${cssVariables.colorPrimary50};
   }

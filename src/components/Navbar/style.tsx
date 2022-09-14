@@ -58,7 +58,7 @@ export const MenuOpener = styled.button`
   -ms-user-select: none;
   user-select: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 968px) {
     display: none;
   }
 `;

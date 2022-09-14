@@ -15,6 +15,10 @@ export const AboutContent = styled.div`
   > * {
     flex-basis: 100%;
   }
+
+  @media screen and (max-width: 968px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutText = styled.div`
@@ -28,7 +32,7 @@ export const AboutImage = styled.div`
   width: 100%;
   background-color: grey;
   color: white;
-
+  min-height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
