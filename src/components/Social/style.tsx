@@ -45,7 +45,7 @@ export const SocialS = styled.div`
     }
 
     span:hover {
-      font-weight: bold;
+      text-decoration: underline;
       transform: translateY(-5px);
     }
   }

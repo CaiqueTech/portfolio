@@ -8,13 +8,5 @@ import {
 } from "react-icons/si";
 
 export const Tech = () => {
-  return (
-    <TechS>
-      <SiHtml5 />
-      <SiCss3 />
-      <SiJavascript />
-      <SiTypescript />
-      <SiReact />
-    </TechS>
-  );
+  return <TechS></TechS>;
 };
