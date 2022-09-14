@@ -1,38 +1,35 @@
 import styled from "styled-components";
+import { cssVariables } from "../../GlobalStyle";
 
 export const TechS = styled.section`
-  min-height: 40vh;
   width: min(60rem, 100%);
-  margin: 4em auto;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-  gap: 2em;
+  min-height: 40vh;
+  margin-inline: auto;
+`;
 
-  @media screen and (max-width: 968px) {
-    margin-inline: auto;
-    padding-inline: 4em;
-    grid-template-columns: repeat(2, 1fr);
-  }
+export const TechContent = styled.div`
+  display: flex;
+  height: max-content;
+  gap: 4em;
 
-  @media screen and (max-width: 568px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  & > * {
-    padding: 2em;
-    width: 10rem;
-    height: 10rem;
-    color: #235cb1;
-    cursor: pointer;
-    /* Glassmorphism */
-    background: rgba(10, 25, 48, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  > * {
+    flex-basis: 100%;
   }
 `;
 
-export const TechItem = styled.div``;
+export const TechText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: ${cssVariables.colorPrimary100};
+`;
+
+export const TechImage = styled.div`
+  width: 100%;
+  background-color: grey;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

@@ -9,7 +9,7 @@ import { revealText } from "../Animations/style";
 
 export const HeroS = styled.section`
   width: min(60rem, 100%);
-  margin-inline: auto;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   justify-content: center;

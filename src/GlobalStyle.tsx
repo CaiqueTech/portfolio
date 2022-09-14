@@ -70,6 +70,9 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${cssVariables.colorPrimary800};
     animation: ${bodyAnimation} .5s forwards 2.7s;
   }
+  section{
+    margin-block: 6rem;
+  }
   img {
     width: 100%;
     height: auto;
