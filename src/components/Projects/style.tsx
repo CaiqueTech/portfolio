@@ -17,7 +17,7 @@ export const ProjectsTitle = styled(SectionTitle)`
 export const ProjectItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 8em;
 `;
 
 export const ProjectItemS = styled.div<ProjectProps>`
@@ -59,8 +59,6 @@ export const ProjectImg = styled.div`
 `;
 
 export const ProjectText = styled.div<ProjectProps>`
-  word-wrap: break-word;
-  word-break: break-all;
   flex-basis: 50%;
   align-self: center;
   padding: 2em;
@@ -80,6 +78,8 @@ export const ProjectText = styled.div<ProjectProps>`
   @media screen and (max-width: 968px) {
     margin: 0;
     margin-top: -10px;
+    word-wrap: break-word;
+    word-break: break-all;
   }
 
   img {
@@ -92,9 +92,8 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectTech = styled.div`
-  > * + * {
-    margin-left: 0.5em;
-  }
+  display: flex;
+  gap: 1em;
   color: ${cssVariables.colorPrimary500};
   @media screen and (max-width: 968px) {
     font-size: ${cssVariables.fontSizeNormal};

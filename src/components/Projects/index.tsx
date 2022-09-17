@@ -11,10 +11,14 @@ import {
 
 import todoImg from "../../assets/todo-desktop.png";
 import portfolioImg from "../../assets/portfolio-desktop.png";
+import bookmarkImg from "../../assets/bookmark-desktop.png";
+import calculatorImg from "../../assets/calculator-desktop.png";
 
 interface ProjectsProps {
   reversed?: boolean;
   image: string;
+  description: string;
+  techs: string;
 }
 
 const ProjectItem = (props: ProjectsProps) => {
@@ -24,18 +28,8 @@ const ProjectItem = (props: ProjectsProps) => {
         <img src={props.image} />
       </ProjectImg>
       <ProjectText reversed={props.reversed}>
-        <ProjectDescription>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus perspiciatis facere reprehenderit repellendus labore.
-          Molestias.
-        </ProjectDescription>
-        <ProjectTech>
-          <span>React</span>
-          <span>·</span>
-          <span>TypeScript</span>
-          <span>·</span>
-          <span>Styled-Components</span>
-        </ProjectTech>
+        <ProjectDescription>{props.description}</ProjectDescription>
+        <ProjectTech>{props.techs}</ProjectTech>
       </ProjectText>
     </ProjectItemS>
   );
@@ -46,9 +40,28 @@ export const Projects = () => {
     <ProjectsS>
       <ProjectsTitle>Projetos</ProjectsTitle>
       <ProjectItemContainer>
-        <ProjectItem image={portfolioImg} />
-        <ProjectItem image={todoImg} reversed />
-        <ProjectItem image={todoImg} />
+        <ProjectItem
+          description="Portfolio para mostrar meus conhecimentos, habilidades e falar um pouco sobre mim mesmo."
+          techs="React · TypeScript · Styled-Components"
+          image={portfolioImg}
+        />
+        <ProjectItem
+          description="Aplicação TODO para anotar tarefas. Possuindo as opções, deletar, fixar e completar tarefa."
+          techs="React · TypeScript · Styled-Components · LocalStorage"
+          image={todoImg}
+          reversed
+        />
+        <ProjectItem
+          description="Calculadora com operações básicas, tendo adição, subtração, multiplicalçao e divisão. Possui um sistema de sobrescrever a última operação caso não seja a desejada."
+          techs="React · JavaScript · useReducer · CSS"
+          image={calculatorImg}
+        />
+        <ProjectItem
+          description="Descrição muito foda mesmo sobre o projeto"
+          techs="React · JavaScript · CSS"
+          image={bookmarkImg}
+          reversed
+        />
       </ProjectItemContainer>
     </ProjectsS>
   );
