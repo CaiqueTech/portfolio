@@ -10,7 +10,6 @@ export const ContactTitle = styled(SectionTitle)`
 `;
 
 export const ContactFormContainer = styled.div`
-  margin-top: 8rem;
   width: min(40rem, 100%);
   margin-inline: auto;
 `;
