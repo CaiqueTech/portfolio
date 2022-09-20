@@ -57,7 +57,7 @@ export const Projects = () => {
           image={calculatorImg}
         />
         <ProjectItem
-          description="Descrição muito foda mesmo sobre o projeto"
+          description="Landing page sobre uma extensão do chrome."
           techs="React · JavaScript · CSS"
           image={bookmarkImg}
           reversed
