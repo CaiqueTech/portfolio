@@ -88,6 +88,11 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  input{
+    outline: none;
+    border: none;
+    
+  }
   button {
     border: none;
     outline: none;
