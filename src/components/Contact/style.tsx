@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { cssVariables } from "../../GlobalStyle";
 import { SectionTitle } from "../Styles/SectionTitle";
 
 export const ContactS = styled.section``;
@@ -19,12 +20,32 @@ export const ContactForm = styled.form`
   flex-direction: column;
   gap: 1em;
 
-  & > input {
-    padding: 1em 1em;
+  & > * {
+    color: ${cssVariables.colorPrimary50};
+    background-color: ${cssVariables.colorPrimary600};
   }
 
-  & > input:nth-last-of-type(2) {
-    padding: 5em 1em;
+  & > *::placeholder {
+    color: ${cssVariables.colorPrimary400};
+  }
+
+  & > input {
+    padding: 1em 1em;
+    resize: both;
+  }
+
+  & > textarea {
+    padding: 1em 1em;
+    height: 10rem;
     margin-bottom: 1em;
+    resize: none;
+  }
+
+  & > button {
+    padding: 1.5em 1em;
+  }
+
+  & > button:hover {
+    background-color: ${cssVariables.colorPrimary550};
   }
 `;

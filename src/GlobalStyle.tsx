@@ -8,6 +8,7 @@ export const cssVariables = {
   colorPrimary800: "#092B34",
   colorPrimary700: "#0C3945",
   colorPrimary600: "#0F4657",
+  colorPrimary550: "#14576b",
   colorPrimary500: "#1e88a9",
   colorPrimary400: "#23A9D1",
   colorPrimary300: "#3FB9DE",
@@ -81,6 +82,9 @@ export const GlobalStyle = createGlobalStyle`
     padding-inline: 4em;
     }
   }
+  section:last-of-type{
+    margin-bottom: 5rem;
+  }
   img {
     width: 100%;
     height: auto;
@@ -88,7 +92,8 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
-  input{
+  input,
+  textarea{
     outline: none;
     border: none;
     

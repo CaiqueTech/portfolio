@@ -27,10 +27,10 @@ export const Contact = () => {
       <ContactTitle>Contato</ContactTitle>
       <ContactFormContainer>
         <ContactForm onSubmit={sendEmail}>
-          <input type="text" name="user_name" placeholder="Nome" />
-          <input type="email" name="user_email" placeholder="Email" />
-          <input type="text" name="user_message" placeholder="Mensagem" />
-          <input type="submit" value="Enviar" />
+          <input type="text" name="user_name" placeholder="Nome" required />
+          <input type="email" name="user_email" placeholder="Email" required />
+          <textarea placeholder="Mensagem" />
+          <button type="submit">Enviar</button>
         </ContactForm>
       </ContactFormContainer>
     </ContactS>

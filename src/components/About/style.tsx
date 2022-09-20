@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { cssVariables } from "../../GlobalStyle";
 
 export const AboutS = styled.section`
+  margin-top: 10rem;
   width: min(60rem, 100%);
   min-height: 40vh;
   margin-inline: auto;
