@@ -143,7 +143,9 @@ export const MenuLink = styled.li`
 
 export const ResumeS = styled(ButtonS)`
   opacity: 0;
+  height: max-content;
   animation: ${revealLink} 0.7s forwards 3.7s;
+  font-size: 0.8rem;
 `;
 
 export const MenuIcon = styled(HiMenu)`

@@ -4,7 +4,7 @@ import { cssVariables } from "../../GlobalStyle";
 export const ButtonS = styled.button`
   position: relative;
   color: ${cssVariables.colorPrimary200};
-  padding: 1em 2em;
+  padding: 0.75rem 2rem;
   border: 1px solid ${cssVariables.colorPrimary200};
   font-weight: bold;
 

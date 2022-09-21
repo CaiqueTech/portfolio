@@ -54,6 +54,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background: ${cssVariables.colorPrimary700};
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
     height: 100vh;
   }
   body::after {
@@ -74,7 +75,7 @@ export const GlobalStyle = createGlobalStyle`
   section{
     width: min(60rem, 100%);
     margin-inline: auto;
-    margin-block: 15rem;
+    padding-block: 5rem;
     @media screen and (max-width: 1200px) {
     padding-inline: 5em;
     }

@@ -25,12 +25,22 @@ export const Navbar = (props: NavbarProps) => {
       </Logo>
       <NavbarS onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen}>
         <MenuS>
-          <MenuLink>Sobre</MenuLink>
+          <MenuLink as="a" href="#about">
+            Sobre
+          </MenuLink>
           <MenuLink>Tecnologias</MenuLink>
-          <MenuLink>Projetos</MenuLink>
-          <MenuLink>Contato</MenuLink>
+          <MenuLink as="a" href="#projects">
+            Projetos
+          </MenuLink>
+          <MenuLink as="a" href="#contact">
+            Contato
+          </MenuLink>
         </MenuS>
-        <ResumeS>
+        <ResumeS
+          as="a"
+          download
+          href="\assets\Caique Morales Silva - Currículo.pdf"
+        >
           <span>Currículo</span>
         </ResumeS>
         <MenuOpener>

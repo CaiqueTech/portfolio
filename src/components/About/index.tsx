@@ -1,9 +1,12 @@
 import { AboutContent, AboutImage, AboutS, AboutText } from "./style";
 import { SectionTitle } from "../Styles/SectionTitle";
+import { useRef } from "react";
 
 export const About = () => {
+  const aboutRef = useRef(null);
+
   return (
-    <AboutS>
+    <AboutS id="about">
       <SectionTitle>Sobre</SectionTitle>
       <AboutContent>
         <AboutText>

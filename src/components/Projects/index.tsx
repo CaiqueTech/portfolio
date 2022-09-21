@@ -37,7 +37,7 @@ const ProjectItem = (props: ProjectsProps) => {
 
 export const Projects = () => {
   return (
-    <ProjectsS>
+    <ProjectsS id="projects">
       <ProjectsTitle>Projetos</ProjectsTitle>
       <ProjectItemContainer>
         <ProjectItem

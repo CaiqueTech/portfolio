@@ -31,7 +31,7 @@ export const Contact = () => {
       );
   };
   return (
-    <ContactS>
+    <ContactS id="contact">
       <ContactTitle>Contato</ContactTitle>
       <ContactFormContainer>
         <ContactForm onSubmit={sendEmail}>
