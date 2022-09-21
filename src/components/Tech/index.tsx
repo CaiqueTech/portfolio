@@ -1,13 +1,11 @@
-import { TechContainer, TechItem, TechS } from "./style"
+import { TechContainer, TechItem, TechS } from "./style";
 
-export function Tech = () => {
-  return(
+export const Tech = () => {
+  return (
     <TechS>
       <TechContainer>
-        <TechItem>
-
-        </TechItem>
+        <TechItem></TechItem>
       </TechContainer>
     </TechS>
-  )
-}
+  );
+};
