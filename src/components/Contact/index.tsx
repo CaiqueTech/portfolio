@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ContactForm,
@@ -8,8 +8,16 @@ import {
 } from "./style";
 
 export const Contact = () => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setName("");
+    setEmail("");
+    setMessage("");
 
     emailjs
       .sendForm("gmail", "react_form", e.currentTarget, "VzQNPgx1ZTM_-GVXh")
@@ -27,9 +35,34 @@ export const Contact = () => {
       <ContactTitle>Contato</ContactTitle>
       <ContactFormContainer>
         <ContactForm onSubmit={sendEmail}>
-          <input type="text" name="user_name" placeholder="Nome" required />
-          <input type="email" name="user_email" placeholder="Email" required />
-          <textarea placeholder="Mensagem" />
+          <input
+            value={name}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setName(e.currentTarget.value)
+            }
+            type="text"
+            name="name"
+            placeholder="Nome"
+            required
+          />
+          <input
+            value={email}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setEmail(e.currentTarget.value)
+            }
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            value={message}
+            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              setMessage(e.currentTarget.value)
+            }
+            placeholder="Mensagem"
+            name="message"
+          />
           <button type="submit">Enviar</button>
         </ContactForm>
       </ContactFormContainer>

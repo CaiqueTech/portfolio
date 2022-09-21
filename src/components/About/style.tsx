@@ -6,6 +6,10 @@ export const AboutS = styled.section`
   width: min(60rem, 100%);
   min-height: 40vh;
   margin-inline: auto;
+
+  @media screen and (max-width: 968px) {
+    margin-top: 5rem;
+  }
 `;
 
 export const AboutContent = styled.div`
