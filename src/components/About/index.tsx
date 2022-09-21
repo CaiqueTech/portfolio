@@ -11,22 +11,19 @@ export const About = () => {
       <AboutContent>
         <AboutText>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magnam
-            porro minima. Id labore vel molestiae eum expedita voluptatibus
-            autem!
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur esse ducimus unde pariatur similique odit natus
-            adipisci sapiente ut a.
+            Desenvolvedor WEB com 3-4 anos de experiência. Meu foco atualmente é
+            no Desenvolvimento WEB e no Front-End, mas pretendo seguir na
+            carreira de Desenvolvedor Full-Stack. Fazendo uso de Back-End e
+            Banco de Dados, tecnologias das quais já possuo conhêcimento básico
+            nelas.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            tempore cum, ullam hic harum possimus vitae voluptatum asperiores
-            aut deserunt!
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            ipsum deserunt commodi similique illo pariatur perferendis at quos
-            consequatur voluptatem! autem!
+            Gosto de trabalhar com a métodologia do Clean Code para trazer um
+            código mais legível e também mais visualmente bonito.
+          </p>
+          <p>
+            Uso também a métodologia do Mobile First, para assim conseguir
+            trazer uma responsividade melhor para meu site.
           </p>
         </AboutText>
         <AboutImage>imagem</AboutImage>
